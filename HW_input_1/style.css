@@ -1,0 +1,23 @@
+*{
+background-color: biege;
+}
+
+h1{
+	margin-bottom: -10px;
+}
+p{border: 2px solid;
+	
+	
+
+}
+#button_color{
+	background-color: blue;
+	
+
+}
+#button_color:hover {
+	background-color: green;
+	color: aqua;
+}
+button{background-color: pink;
+}
