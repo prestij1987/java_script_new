@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eshop</title>
+</head>
+
+<body>
+    <h1 style="text-align: center">Магазин покупок</h1>
+    <p class="script">
+    <img src="image/морковь.jpg" width='200px' height='100px' alt="морковь">
+    <img src="image/гречка.jpg" width='200px' height='100px'alt="'гречка">
+    <img src="image/орехи.jpeg" width='200px' height='100px' alt="орехи">
+    </p>
+    <div class="pozition">
+        
+    <form>
+        <label><input id='lot_1' type='value' value='Морковь'>Количество</label>
+        <button id="button_1">Добавить в корзину</button>
+    </form>
+
+    <form>
+        <label><input id='lot_2' type='value' value='Гречка'>Количество</label>
+        <button type='submit' id="button_2">Добавить в корзину</button>
+        
+    </form>
+
+    <form>
+        <label><input id='lot_3' type='value' value=''>Количество</label>
+        <button type='button' id="button_3">Добавить в корзину</button>
+    </form>
+    </div>
+
+    <p>
+    <table>
+        <tr>
+            <th>Товар</th>
+            <th>Цена</th>
+            <th>Количество</th>
+            <th>Сумма</th>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    
+    </table>
+    </p>
+    <style>
+        
+        body{
+            border-color: bisque;
+            
+
+        }
+        .pozition{
+            display: inline-block;
+            position: relative;
+        }
+        button{
+        
+            margin-bottom: 10px;
+        }    
+        
+        .script{
+            margin-top: 40px;
+            margin-right: 80px;
+            padding: 20px;
+            padding-right: 30px;
+
+        }
+        table{
+            border: 4px solid;
+            border-color: aqua;
+            border-radius: 10px;
+            width: 400px;
+            height: 200px;
+            border-collapse: collapse;
+
+        }
+        tr, td, th{
+            border: 2px solid;
+            border-color: black;
+            border-collapse: collapse;
+        }
+    </style>
+   
+
+
+
+    <script>
+        document.getElementById('button_1').onclick = my_func_1();
+
+        document.getElementById('button_2').onclick = my_func_2();
+
+        document.getElementById('button_3').onclick = my_func_3();
+
+        
+
+        function my_func_1() {
+            let item_1 = document.getElementById('lot_1').value;
+            document.getElementById('button_1').innerHTML = item_1;
+
+        };
+        function my_func_2() {
+            let item_2 = document.getElementById('lot_2').value;
+            document.getElementById('button_2').innerHTML = item_2;
+
+        };
+        function my_func_3() {
+            let item_3 = document.getElementById('lot_3').value;
+            document.getElementById('button_3').innerHTML = item_3;
+
+        };
+
+        
+
+    </script>
+</body>
+</html> 
